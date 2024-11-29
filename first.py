@@ -6,6 +6,7 @@ def draw_square(screen):
     # рисуем "тень"
     pygame.draw.circle(screen, color, (x, y), random.randrange(1, 40))
 
+
 if __name__ == '__main__':
     # инициализация Pygame:
     pygame.init()
