@@ -2,7 +2,11 @@ import pygame
 import random
 def draw_square(screen):
     x, y = (random.randrange(0, 800), random.randrange(0, 600))
-    color = pygame.Color("#fbec5d")
+
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    color = pygame.Color(r, g, b)
     # рисуем "тень"
     pygame.draw.circle(screen, color, (x, y), random.randrange(1, 40))
 
